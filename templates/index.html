@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheet Counter</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sheet Counter</h1>
+            <p>Upload an image of the sheet stack to count the number of sheets.</p>
+        </header>
+        <main>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="fileInput" class="upload-label">
+                    <span class="upload-text" id="uploadText">Choose an image to upload</span>
+                    <img id="previewImage" src="" alt="Preview Image" style="display: none;">
+                    <input type="file" id="fileInput" name="file" accept="image/*" required>
+                </label>
+                <button type="submit">Upload Image</button>
+            </form>
+            <div id="result" class="result-container">
+                <p id="sheetCount" class="result-text"></p>
+            </div>
+            <div id="processedImageContainer" class="image-container">
+                <p>Processed Image:</p>
+                <img id="processedImage" src="" alt="Processed Image" style="display: none;">
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
