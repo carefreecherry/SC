@@ -1,3 +1,9 @@
+'''To enhance your dataset, consider extracting additional frames from your sample video. 
+You can use OpenCV's extract_frames function to read the video and save frames at specified 
+intervals. By adjusting the frame rate, you can control how frequently frames are captured, 
+allowing you to generate more data from a single video. This approach is especially useful for 
+expanding small datasets and can provide a more diverse range of data for analysis or training.'''
+
 import cv2
 import os
 
