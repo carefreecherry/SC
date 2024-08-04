@@ -1,29 +1,35 @@
-Sheet Count detection
+# Sheet Count detection
+
 A web-based application for counting sheet stacks in manufacturing plants. Built with Flask, HTML/CSS, and OpenCV, it automates sheet counting by processing uploaded images, offering accurate and efficient results for industrial environments.
 
-Table of Contents
-Sheet Count detection
-Table of Contents
-Features
-Prerequisites
-Setup
-Project Structure
-Contributing
-License
+# Table of Contents
 
-Features:
-Automates the counting of sheet stacks in a manufacturing plant.
-Uses computer vision techniques for accurate sheet count detection.
-User-friendly web interface for uploading images and receiving sheet counts.
-Optimized for performance to ensure quick responses.
+1. Sheet Count detection
+2. Table of Contents
+3. Features
+4. Prerequisites
+5. Setup
+6. Project Structure
+7. Contributing
+8. License
 
-Prerequisites
+# Features:
+1) Automates the counting of sheet stacks in a manufacturing plant.
+2) Uses computer vision techniques for accurate sheet count detection.
+3) User-friendly web interface for uploading images and receiving sheet counts.
+4) Optimized for performance to ensure quick responses.
+
+# Prerequisites
+
 Python 3.8+
+
 Flask
+
 OpenCV
+
 NumPy
 
-Setup
+# Setup
 
 Clone the repository:
 git clone https://github.com/carefreecherry/SC
@@ -55,42 +61,68 @@ Install the required packages:
 Check your Python version >=3.8.0
 
 pip install Flask
+
 pip install opencv-python
+
 pip install matplotlib
+
 pip install numpy
 
 Run the Flask application:
 python app.py
+
 The backend will start on http://127.0.0.1:5000.
 
-Project Structure
+# Project Structure
 
 Sheet-counter/
-├── Trails/                        
+
+├── Trails/   
+
 │   ├── 1_HoughTransform.py
+
 │   ├── 2_MorphologicalClosing.py
+
 │   ├── 3_Contouring.py
+
 │   ├── 4_LineMidPoint.py.py
+
 │   ├── 5_MLmodel
-├── images/                             
-│   ├── Video_frames                    
+
+├── images/     
+
+│   ├── Video_frames             
+
 │   ├── sample images
+
 ├── static/       
+
 │   ├──styles.css                     
+
 │   ├──scripts.js                      
+
 ├── template/
+
 │   ├──index.html                      # Frontend HTML file
+
 ├── processed/
+
 ├── uploads/
+
 ├── app.py
+
 ├── sheet_counter.py
+
 ├── Frames.py
+
 ├── README.md                          # This README file
+
 ├── Sheet_Counter                      # This PDF file
+
 ├── Working.mp4                        # This is Video
 
-Contributing
+# Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
 
-License
+# License
 This project is licensed under the MIT License.
