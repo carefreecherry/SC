@@ -77,49 +77,50 @@ The backend will start on http://127.0.0.1:5000.
 
 Sheet-counter/
 
-├── Trails/   
+├── Trials/                        
 
-│   ├── 1_HoughTransform.py
+│   ├── 1_HoughTransform.py          # Script for Hough Transform approach
 
-│   ├── 2_MorphologicalClosing.py
+│   ├── 2_MorphologicalClosing.py    # Script for Morphological Closing approach
 
-│   ├── 3_Contouring.py
+│   ├── 3_Contouring.py              # Script for Contouring approach
 
-│   ├── 4_LineMidPoint.py.py
+│   ├── 4_LineMidPoint.py            # Script for Line Midpoint approach
 
-│   ├── 5_MLmodel
+│   ├── 5_MLmodel                    # Placeholder for a machine learning model approach
 
-├── images/     
+├── images/                             
 
-│   ├── Video_frames             
+│   ├── Video_frames                 # Directory for frames extracted from video
 
-│   ├── sample images
+│   ├── sample images                # sample images
 
 ├── static/       
 
-│   ├──styles.css                     
+│   ├── styles.css                   # CSS styles for the web application
 
-│   ├──scripts.js                      
+│   ├── scripts.js                   # JavaScript for the web application
 
 ├── template/
 
-│   ├──index.html                      # Frontend HTML file
+│   ├── index.html                   # Frontend HTML file
 
-├── processed/
+├── processed/                       # Directory for storing processed images
 
-├── uploads/
+├── uploads/                         # Directory for storing uploaded images
 
-├── app.py
+├── app.py                           # Flask backend script
 
-├── sheet_counter.py
+├── sheet_counter.py                 # Main script for sheet counting functionality
 
-├── Frames.py
+├── Frames.py                        # Script for creating video frames
 
-├── README.md                          # This README file
+├── README.md                        # This README file
 
-├── Sheet_Counter                      # This PDF file
+├── Sheet_Counter.pdf                # PDF document with project details
 
-├── Working.mp4                        # This is Video
+├── Working.mp4                      # Video demonstration of the application
+
 
 # Contributing
 Contributions are welcome! Please fork this repository and submit a pull request with your changes.
