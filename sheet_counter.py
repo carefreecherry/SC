@@ -1,3 +1,10 @@
+'''The sheet counter approach begins with preprocessing the image by converting it to grayscale, 
+applying median filtering, and using histogram equalization for better contrast. Edge detection 
+with the Canny edge detector highlights the sheet boundaries, followed by detecting lines using 
+the Hough Line Transform. Detected lines are classified as vertical or horizontal, sorted, and 
+grouped based on proximity. Representative lines are then drawn on the original image to visualize 
+the sheet boundaries, and the number of sheets is calculated by counting these lines. '''
+
 import cv2
 import numpy as np
 import os
