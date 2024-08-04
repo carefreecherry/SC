@@ -64,14 +64,29 @@ pip install Flask
 
 pip install opencv-python
 
-pip install matplotlib
-
 pip install numpy
 
 Run the Flask application:
 python app.py
 
 The backend will start on http://127.0.0.1:5000.
+
+If you want to try the trials approaches
+then open terminal,
+
+cd trials
+
+pip install matplotlib --prefer-binary
+
+pip install opencv-python
+
+pip install sympy (for 4_LineMidPoint.py.py only)
+
+In the code, copy the absolute path of image with r in beginning. Example:
+
+r'path\to\images\2.jpeg'
+
+python 1_houghtransform.py (or any other file)
 
 # Project Structure
 
