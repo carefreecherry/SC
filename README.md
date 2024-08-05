@@ -14,10 +14,10 @@ A web-based application for counting sheet stacks in manufacturing plants. Built
 8. License
 
 # Features:
-1) Automates the counting of sheet stacks in a manufacturing plant.
-2) Uses computer vision techniques for accurate sheet count detection.
-3) User-friendly web interface for uploading images and receiving sheet counts.
-4) Optimized for performance to ensure quick responses.
+1) Developed a comprehensive preprocessing pipeline to enhance image quality and contrast.
+2) Utilized a combination of edge detection and line detection to accurately identify sheet boundaries.
+3) Implemented line classification and grouping to ensure precise sheet count calculation.
+4) Designed a user-friendly web interface for easy image uploading and result visualization.
 
 # Prerequisites
 
