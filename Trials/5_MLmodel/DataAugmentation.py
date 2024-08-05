@@ -13,14 +13,14 @@ datagen = ImageDataGenerator(
 )
 
 # Load and augment an image
-img_path = 'images/9.jpeg'
+img_path = 'images/2.jpeg'
 img = cv2.imread(img_path)
 x = img_to_array(img)  # Convert image to numpy array
 x = x.reshape((1,) + x.shape)  # Reshape image array
 
 # Generate and save augmented images
 i = 0
-for batch in datagen.flow(x, batch_size=1, save_to_dir='Trials/5_MLmodel/preview', save_prefix='frame_9', save_format='jpeg'):
+for batch in datagen.flow(x, batch_size=1, save_to_dir='Trials/5_MLmodel/preview', save_prefix='frame_2', save_format='jpeg'):
     i += 1
-    if i > 20:  # Generate 20 augmented images per original image
+    if i > 1:  # Generate 20 augmented images per original image
         break
